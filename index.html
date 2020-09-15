@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/tachyons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <body>
+    <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center relative noselect">
+        <img src="assets/icons/year.jpg" class="db w-100 br2 br--top blur" alt="blur img">
+        <div class="absolute date-adjust">
+            <div class="flex items-center justify-center">
+                <a id="prev-year" class="f5 no-underline white bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4">
+                    <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
+                      <title>chevronLeft icon</title>
+                      <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+                    </svg>
+                </a><span id="_year" class="pa3 mr4 f3 white">2020</span>
+                <a id="next-year" class="f5 no-underline white bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box">
+                  <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>chevronRight icon</title>
+                    <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                  </svg>
+                </a>
+            </div>
+        </div>
+        <div class="pa2 ph3-ns pb3-ns">
+          <div class="flex items-center justify-center">
+              <a id="prev-month" class="f5 no-underline mid-gray bg-animate inline-flex items-center pa3 mr4 cursor-pointer">
+                  <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>chevronLeft icon</title>
+                    <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+                  </svg>
+              </a><span id="_month" class="pa3 mr4 f5 mid-gray">January</span>
+              <a id="next-month" class="f5 no-underline mid-gray bg-animate inline-flex items-center pa3 cursor-pointer">
+                <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                  <title>chevronRight icon</title>
+                  <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                </svg>
+              </a>
+          </div>
+          <div class="mw9 center ph3-ns">
+            <div class="cf ph2-ns">
+              <div class="fl w-14 ">
+                <div class="bg-lightest-blue mid-gray tc br4">su</div>
+              </div>
+              <div class="fl w-14 ">
+                <div class="bg-white silver tc">mo</div>
+              </div>
+              <div class="fl w-14 ">
+                <div class="bg-white silver tc">tu</div>
+              </div>
+              <div class="fl w-14 ">
+                <div class="bg-white silver tc">we</div>
+              </div>
+              <div class="fl w-14 ">
+                <div class="bg-white silver tc">th</div>
+              </div>
+              <div class="fl w-14 ">
+                <div class="bg-white silver tc">fr</div>
+              </div>
+              <div class="fl w-14 ">
+                <div class="bg-white silver tc">sa</div>
+              </div>
+              <div id="_setDays"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
